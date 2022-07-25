@@ -1,6 +1,6 @@
 /*About Smriti Page CSS*/
 
-h1{
+h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     font-size: 40px;
     text-align: center;
@@ -66,4 +66,45 @@ h1{
 
 #hobbies_description {
     text-align: center;
+}
+
+#contact_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: burlywood;
+}
+
+#contact_description {
+    flex: 3 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#contact_description div img {
+    width: 40px;
+    padding: 5px;
+}
+
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width:1024px) {
+
+}
+
+@media screen and (max-width:760px) {
+    .about_sm_description {
+        width: 100%;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
 }

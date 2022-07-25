@@ -1,9 +1,45 @@
-/*About Smriti Page CSS*/
+/*Common CSS */
 
+nav {
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header img {
+    width: 80px;
+}
+
+/*About Smriti Page CSS*/
 h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
+}
+
+.heading {
+    font-size: 40px;
+}
+
+.about_sm_container {
+    margin: 60px;
 }
 
 .about_sm_div {
@@ -39,7 +75,8 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 60px 30px;
+    padding: 50px 20px;
+    background-color: burlywood;
 }
 
 .hobbies_container h1 {
@@ -61,7 +98,8 @@ h1 {
     padding: 50px 25px;
     border: 2 px solid #e3e3e3;
     border-radius: 15px;
-    box-shadow: 5px 3px burlywood;
+    background-color: aliceblue;
+    box-shadow: 5px 3px #9d6f33;
 }
 
 #hobbies_description {
@@ -72,7 +110,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: burlywood;
+    background-color: #e3e3e3;
 }
 
 #contact_description {
@@ -87,13 +125,60 @@ h1 {
     padding: 5px;
 }
 
+#message_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+#message {
+    width: 40%;
+}
+
+.main_message {
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+}
+
+.sub_message {
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+}
+
+.message_form_container {
+    padding: 60px 40px;
+}
+
+.message_form {
+    width: 50%;
+    margin: 10px auto;
+}
+
+.message_grid_container {
+    display: grid;
+    grid-template-columns: 150px 300px 140px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 200px;
+    height: 80px;
+}
+
+.message_form h2 {
+    margin-top: 0px;
+}
+
 .mobile {
     display: none;
 }
 
-@media screen and (max-width:1024px) {
-
-}
+@media screen and (max-width:1024px) {}
 
 @media screen and (max-width:760px) {
     .about_sm_description {
@@ -107,4 +192,13 @@ h1 {
     .mobile {
         display: block;
     }
+
+    .message_form_container {
+        padding: 5px 30px;
+    }
+
+    .main_message {
+        font-size: 30px;
+    }
+
 }

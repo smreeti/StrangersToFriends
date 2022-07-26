@@ -1,7 +1,7 @@
 /*Common CSS */
-
 nav {
     font-weight: bold;
+    font-size: 20px;
 }
 
 nav a {
@@ -95,8 +95,9 @@ h1 {
     flex: 1 1 200px;
     flex-direction: column;
     margin: 30px;
-    padding: 50px 25px;
-    border: 2 px solid #e3e3e3;
+    max-width: 260px;
+    padding: 35px 25px;
+    border: 2px solid #e3e3e3;
     border-radius: 15px;
     background-color: aliceblue;
     box-shadow: 5px 3px #9d6f33;
@@ -111,6 +112,7 @@ h1 {
     align-items: center;
     justify-content: space-between;
     background-color: #e3e3e3;
+    padding-bottom: 30px;
 }
 
 #contact_description {
@@ -166,12 +168,56 @@ h1 {
 }
 
 textarea {
-    width: 200px;
-    height: 80px;
+    width: 290px;
+    height: 100px;
+    border: 3px solid #e3e3e3;
 }
 
 .message_form h2 {
     margin-top: 0px;
+}
+
+.message_form label {
+    font-weight: bold;
+}
+
+.message_form input {
+    height: 25px;
+    border: 3px solid #e3e3e3;
+}
+
+.message_form span {
+    color: red;
+}
+
+#sendMessage {
+    width: 140px;
+    height: 30px;
+    background-color: #f8ce1c;
+    color: white;
+    font-size: 20px;
+    border: none;
+    font-weight: bold;
+}
+
+.footer_content {
+    text-align: center;
+}
+
+.footer_content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.copyright_content {
+    font-family: 'serif';
+    font-style: italic;
+    text-align: center;
+    width: 100%;
+}
+
+.copyright_content img {
+    width: 25px;
 }
 
 .mobile {
@@ -181,8 +227,15 @@ textarea {
 @media screen and (max-width:1024px) {}
 
 @media screen and (max-width:760px) {
+    nav ul {
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+
     .about_sm_description {
         width: 100%;
+        padding: 0;
     }
 
     .desktop {
@@ -197,8 +250,31 @@ textarea {
         padding: 5px 30px;
     }
 
+    #message{
+        width: 100%;
+    }
+
     .main_message {
         font-size: 30px;
+    }
+
+    .hobbies {
+        max-width: 200px;
+        padding: 30px 33px;
+
+    }
+
+    .message_grid_container {
+        display: grid;
+        grid-template-rows: repeat(3, 0.5fr);
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    #message_text_box {
+        width: 165px;
     }
 
 }

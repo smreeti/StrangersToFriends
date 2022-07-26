@@ -27,6 +27,26 @@ header img {
     width: 80px;
 }
 
+.footer_content {
+    text-align: center;
+}
+
+.footer_content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.copyright_content {
+    font-family: 'serif';
+    font-style: italic;
+    text-align: center;
+    width: 100%;
+}
+
+.copyright_content img {
+    width: 25px;
+}
+
 /*About Smriti Page CSS*/
 h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
@@ -155,7 +175,7 @@ h1 {
 }
 
 .message_form {
-    width: 50%;
+    width: 80%;
     margin: 10px auto;
 }
 
@@ -200,28 +220,60 @@ textarea {
     font-weight: bold;
 }
 
-.footer_content {
+.submit_message {
     text-align: center;
-}
-
-.footer_content ul {
-    list-style: none;
-    padding: 0;
-}
-
-.copyright_content {
-    font-family: 'serif';
-    font-style: italic;
-    text-align: center;
-    width: 100%;
-}
-
-.copyright_content img {
-    width: 25px;
 }
 
 .mobile {
     display: none;
+}
+
+/* SMRITI EXPERIENCE PAGE CSS */
+#gallery_container{
+    background-color: aliceblue;
+}
+
+.gallery {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.gallery h1 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.gallery_description{
+    font-size: 20px;
+}
+
+.galleryWrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: .5rem;
+    grid-auto-flow: row dense;
+}
+
+.galleryWrap img[src$="_w.jpg"] {
+    grid-column-end: span 2;
+}
+
+.galleryWrap img[src$="_l.jpg"] {
+    grid-column-end: span 2;
+}
+
+.galleryWrap img[src$="_p.jpg"] {
+    grid-row-end: span 2;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 @media screen and (max-width:1024px) {}
@@ -250,7 +302,7 @@ textarea {
         padding: 5px 30px;
     }
 
-    #message{
+    #message {
         width: 100%;
     }
 
@@ -266,15 +318,15 @@ textarea {
 
     .message_grid_container {
         display: grid;
-        grid-template-rows: repeat(3, 0.5fr);
-        grid-template-columns: auto;
+        grid-template-rows: repeat(3, 0.25fr);
+        grid-template-columns: minmax(150px, 300px);
         justify-content: center;
         align-items: center;
         margin-bottom: 10px;
     }
 
     #message_text_box {
-        width: 165px;
+        width: auto;
     }
 
 }

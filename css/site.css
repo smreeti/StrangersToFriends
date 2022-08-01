@@ -1,408 +1,553 @@
 /*Common CSS */
+
+body,
+html {
+  margin: 0;
+}
 nav {
-    font-weight: bold;
-    font-size: 20px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 nav a {
-    text-decoration: none;
-    letter-spacing: 1px;
-    padding: 10px 20px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding: 10px 20px;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 header img {
-    width: 80px;
+  width: 80px;
 }
 
 .footer_content {
-    text-align: center;
+  text-align: center;
 }
 
 .footer_content ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .copyright_content {
-    font-family: 'serif';
-    font-style: italic;
-    text-align: center;
-    width: 100%;
+  font-family: "serif";
+  font-style: italic;
+  text-align: center;
+  width: 100%;
 }
 
 .copyright_content img {
-    width: 25px;
+  width: 25px;
 }
 
 /*About Smriti Page CSS*/
 h1,
 h2 {
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    font-size: 35px;
-    text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
+  font-size: 35px;
+  text-align: center;
 }
 
 .heading {
-    font-size: 45px;
+  font-size: 45px;
 }
 
 .about_sm_container {
-    margin: 60px;
+  margin: 60px;
 }
 
 .about_sm_div {
-    display: flex;
-    justify-content: center;
-    margin-top: 35px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+  flex-wrap: wrap;
 }
 
 .about_sm_image {
-    width: 570px;
-    display: inline-block;
+  width: 570px;
+  display: inline-block;
 }
 
 .about_sm_image img {
-    width: 100%;
-    border-radius: 10px;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .about_sm_description {
-    display: inline-block;
-    width: 50%;
-    vertical-align: top;
-    font-size: 20px;
-    padding-top: 20px;
-    padding-left: 25px;
-    padding-right: 10px;
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-left: 25px;
+  padding-right: 10px;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
 }
 
 .hobbies_container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 50px 20px;
-    background-color: burlywood;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 20px;
+  background-color: burlywood;
+}
+
+.hobbies_mln {
+  background-color: #ff948e69;
 }
 
 .hobbies_container h2 {
-    width: 100%;
+  width: 100%;
 }
 
 .hobbies img {
-    width: 250px;
-    border-radius: 10px;
+  width: 250px;
+  border-radius: 10px;
 }
 
 .hobbies {
-    display: flex;
-    align-items: center;
-    flex: 1 1 200px;
-    flex-direction: column;
-    margin: 30px;
-    max-width: 260px;
-    padding: 35px 25px;
-    border: 2px solid #e3e3e3;
-    border-radius: 15px;
-    background-color: aliceblue;
-    box-shadow: 5px 3px #9d6f33;
+  display: flex;
+  align-items: center;
+  flex: 1 1 200px;
+  flex-direction: column;
+  margin: 30px;
+  max-width: 260px;
+  padding: 35px 25px;
+  border: 2px solid #e3e3e3;
+  border-radius: 15px;
+  background-color: aliceblue;
+  box-shadow: 5px 3px #9d6f33;
+}
+
+.hobbies_mln .hobbies {
+  box-shadow: 5px 3px rgba(110, 11, 11, 0.333);
 }
 
 .hobbies_description {
-    text-align: center;
+  text-align: center;
 }
 
 #contact_container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #e3e3e3;
-    padding-bottom: 30px;
+  background-color: #e3e3e3;
+  padding-bottom: 30px;
+}
+
+#contact_container h2 {
+  margin: 0;
+  padding: 30px 0;
 }
 
 #contact_description {
-    flex: 3 0;
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 #contact_description div img {
-    width: 40px;
-    padding: 5px;
+  width: 40px;
+  padding: 5px;
 }
 
 #message_container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
 }
 
 #message {
-    width: 40%;
+  width: 40%;
 }
 
 .main_message {
-    font-weight: bold;
-    text-align: center;
-    font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 50px;
 }
 
 .sub_message {
-    font-size: 20px;
-    text-align: center;
-    font-style: italic;
+  font-size: 20px;
+  text-align: center;
+  font-style: italic;
 }
 
 .message_form_container {
-    padding: 60px 40px;
+  padding: 60px 40px;
 }
 
 .message_form {
-    width: 80%;
-    margin: 10px auto;
+  width: 80%;
+  margin: 10px auto;
 }
 
 .message_grid_container {
-    display: grid;
-    grid-template-columns: 150px 300px 140px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 150px 300px 140px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 textarea {
-    width: 290px;
-    height: 100px;
-    border: 3px solid #e3e3e3;
+  width: 290px;
+  height: 100px;
+  border: 3px solid #e3e3e3;
 }
 
 .message_form h2 {
-    margin-top: 0px;
+  margin-top: 0px;
 }
 
 .message_form label {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .message_form input {
-    height: 25px;
-    border: 3px solid #e3e3e3;
+  height: 25px;
+  border: 3px solid #e3e3e3;
 }
 
 .message_form span {
-    color: red;
+  color: red;
 }
 
 #sendMessage {
-    width: 140px;
-    height: 30px;
-    background-color: #f8ce1c;
-    color: white;
-    font-size: 20px;
-    border: none;
-    font-weight: bold;
+  width: 140px;
+  height: 30px;
+  background-color: #f8ce1c;
+  color: white;
+  font-size: 20px;
+  border: none;
+  font-weight: bold;
 }
 
 .submit_message {
-    text-align: center;
+  text-align: center;
 }
 
 .mobile {
-    display: none;
+  display: none;
 }
 
 /* SMRITI EXPERIENCE PAGE CSS */
 #gallery_container {
-    background-color: aliceblue;
+  background-color: aliceblue;
 }
 
 .gallery {
-    max-width: 1200px;
-    margin: auto;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .gallery h2 {
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    text-align: center;
-    padding-top: 40px;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
+  text-align: center;
+  padding-top: 40px;
 }
 
 .gallery_description {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .galleryWrap {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: .5rem;
-    grid-auto-flow: row dense;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 0.5rem;
+  grid-auto-flow: row dense;
 }
 
 .galleryWrap img[src$="_w.jpg"] {
-    grid-column-end: span 2;
+  grid-column-end: span 2;
 }
 
 .galleryWrap img[src$="_l.jpg"] {
-    grid-column-end: span 2;
+  grid-column-end: span 2;
 }
 
 .galleryWrap img[src$="_p.jpg"] {
-    grid-row-end: span 2;
+  grid-row-end: span 2;
 }
 
 .gallery img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 #bucket_list_container {
-    padding: 30px;
+  padding: 30px;
 }
 
 .bucket_list_table {
-    font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 70%;
-    margin: auto;
-    text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+  margin: auto;
+  text-align: center;
 }
 
 #bucket_list_search {
-    text-align: center;
+  text-align: center;
 }
 
 /* <a href="https://www.flaticon.com/free-icons/search" title="search icons">Search icons created by Taufik - Flaticon</a>*/
 #bucket_list_search #search {
-    background-image: url('../images/search.png');
-    background-position: 10px 12px;
-    background-repeat: no-repeat;
-    background-size: 20px;
-    width: 30%;
-    font-size: 18px;
-    padding: 12px 20px 12px 40px;
-    border: 2px solid #ddd;
-    border-radius: 15px;
-    margin-bottom: 30px;
-    min-width: 200px;
+  background-image: url("../images/search.png");
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  width: 30%;
+  font-size: 18px;
+  padding: 12px 20px 12px 40px;
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  min-width: 200px;
 }
 
 .bucket_list_search {
-    height: 90px;
-    width: 500px;
-    position: relative;
+  height: 90px;
+  width: 500px;
+  position: relative;
 }
 
 .bucket_list_search img {
-    height: 15px;
-    position: relative;
-    top: 5px;
-    right: 0;
+  height: 15px;
+  position: relative;
+  top: 5px;
+  right: 0;
 }
 
 .bucket_list_search input {
-    width: 100%;
+  width: 100%;
 }
 
 td,
 th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
 }
 
 th {
-    text-align: center;
-    font-size: 20px;
+  text-align: center;
+  font-size: 20px;
 }
 
 tr:nth-child(even) {
-    background-color: #e3e3e3;
+  background-color: #e3e3e3;
 }
 
 .bucket_list_table ul {
-    margin: 0;
-    padding-left: 45px;
+  margin: 0;
+  padding-left: 45px;
 }
 
 .todo_desc {
-    width: 60%;
+  width: 60%;
 }
 
-@media screen and (max-width:1024px) {}
+.about_ml_section {
+  padding: 60px 24px;
+}
 
-@media screen and (max-width:760px) {
-    nav ul {
-        display: block;
-        text-align: center;
-        padding: 0;
-    }
+.about_ml_border {
+  border: 2px solid rgb(161, 22, 22);
+  padding: 18px;
+  margin: auto;
+  width: max-content;
+  height: max-content;
+  background-image: url("../images/malena/wood-frame.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-    .about_sm_description {
-        width: 100%;
-        padding: 0;
-    }
+.about_ml_container {
+  width: 800px;
+  margin: auto;
+  padding: 24px;
+  border: 1px solid rgb(161, 22, 22);
+  background-color: #fff;
+  display: flex;
+}
 
-    .desktop {
-        display: none;
-    }
+.about_ml_image {
+  margin: 0;
+}
 
-    .mobile {
-        display: block;
-    }
+.about_ml_image img {
+  width: 400px;
+  box-shadow: 0px 3px 15px 5px rgba(123, 123, 123, 0.22);
+}
 
-    .message_form_container {
-        padding: 5px 30px;
-    }
+.about_ml_content {
+  margin-left: 30px;
+}
 
-    #message {
-        width: 100%;
-    }
+.about_ml_text {
+  font-size: 18px;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
+}
 
-    .main_message {
-        font-size: 30px;
-    }
+#galery_xp_ml {
+  width: max-content;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 24px;
+  row-gap: 24px;
+  margin: auto;
+}
 
-    .hobbies {
-        max-width: 200px;
-        padding: 30px 33px;
+.galery_image {
+  position: relative;
+}
 
-    }
+.galery_image img {
+  width: 300px;
+  height: auto;
+}
 
-    .message_grid_container {
-        display: grid;
-        grid-template-rows: repeat(3, 0.25fr);
-        grid-template-columns: minmax(150px, 300px);
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 10px;
-    }
+.galery_image span {
+  position: absolute;
+  right: 10px;
+  bottom: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px;
+  background-color: #fff;
+  color: #98090e;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
+}
 
-    #message_text_box {
-        width: auto;
-    }
+@media screen and (max-width: 1024px) {
+}
 
-    .bucket_list_table {
-        width: 90%;
-    }
+@media screen and (max-width: 760px) {
+  nav ul {
+    display: block;
+    text-align: center;
+    padding: 0;
+  }
 
+  .about_sm_description {
+    width: 100%;
+    padding: 0;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .message_form_container {
+    padding: 5px 30px;
+  }
+
+  #message {
+    width: 100%;
+  }
+
+  .main_message {
+    font-size: 30px;
+  }
+
+  .hobbies {
+    max-width: 200px;
+    padding: 30px 33px;
+  }
+
+  .message_grid_container {
+    display: grid;
+    grid-template-rows: repeat(3, 0.25fr);
+    grid-template-columns: minmax(150px, 300px);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  #message_text_box {
+    width: auto;
+  }
+
+  #contact_description {
+    flex-direction: column;
+  }
+
+  #contact_description .contact_item:first-child {
+    border-bottom: 1px solid #0b0d27;
+  }
+
+  .bucket_list_table {
+    width: 90%;
+  }
+
+  .about_ml_border {
+    width: auto;
+    padding: 12px;
+  }
+
+  .about_ml_container {
+    width: auto;
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .about_ml_image {
+    margin: auto;
+  }
+
+  .about_ml_image img {
+    width: 100%;
+  }
+
+  .about_ml_content {
+    margin-top: 24px;
+  }
+
+  #galery_xp_ml {
+    grid-template-columns: 100px 100px;
+    column-gap: 12px;
+    row-gap: 12px;
+  }
+
+  .galery_image img {
+    width: 100px;
+    height: auto;
+  }
+
+  .galery_image span {
+    right: 15%;
+    bottom: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2px 4px;
+  }
 }

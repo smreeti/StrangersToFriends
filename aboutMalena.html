@@ -1,51 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Malena</title>
-    <link rel="icon" type="image/x-icon" href="images/high-five.png">
-    <link rel="stylesheet" href="css/site.css">
-</head>
+    <link rel="icon" type="image/x-icon" href="images/high-five.png" />
+    <link rel="stylesheet" href="css/site.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1 class="heading"> Journey of Stranger To Friends</h1>
-        <img src="images/high-five.png" alt="Girls High five">
+      <h1 class="heading">Journey of Stranger To Friends</h1>
+      <img src="images/high-five.png" alt="Girls High five" />
     </header>
 
     <nav>
-        <ul>
-            <li> <a href="index.html">Home</a></li>
-            <li> <a href="aboutSmriti.html">About Smriti</a></li>
-            <li> <a href="aboutMalena.html">About Malena</a></li>
-            <li> <a href="aboutSmritiExperience.html">Smriti's Experience</a></li>
-            <li> <a href="aboutMalenaExperience.html">Malena's Experience</a></li>
-
-        </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutSmriti.html">About Smriti</a></li>
+        <li><a href="aboutMalena.html">About Malena</a></li>
+        <li><a href="aboutSmritiExperience.html">Smriti's Experience</a></li>
+        <li><a href="aboutMalenaExperience.html">Malena's Experience</a></li>
+      </ul>
     </nav>
 
-    <main></main>
+    <main class="main_container">
+      <section id="about_ml_section" class="about_ml_section">
+          <div class="about_ml_border">
+            <div class="about_ml_container">
+              <div class="about_ml_image">
+                  <img src="images/malena/profile.jpg" alt="Malena Profile Photo" />
+              </div>
+              <div class="about_ml_content about_ml_text">
+                <h2>Malena Aguiar</h2>
+                <p>
+                  Hello,</br></br>
+                  I am Malena Aguiar from Brazil. I have a degree in Computer
+                  Science and have been working for six years as a web developer.
+                  I have faced Working in small, medium, and big businesses is
+                  exciting and different challenges during this journey. </br></br>As a web
+                  developer, I am familiar with some programming languages, such
+                  as PHP, Golang, Java, and Javascript. For the last four years,
+                  my focus has been on Frontend skills, such as HTML, CSS,
+                  Javascript, Pre-processors CSS (SASS), Task Runner (Grunt), Js
+                  Library (React), and Js Frameworks (Vue Js and Angular). I have
+                  worked on different teams and tried diverse workflows and Agile
+                  methodologies. </br></br>Currently, I am a student in the Web Develpment
+                  program at Conestoga College, where I would like to deepen my
+                  abilities, meet new backgrounds, learn how technology is besides
+                  Brazil and learn new perspectives and concepts.
+                </p>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section class="hobbies_container hobbies_mln">
+        <h2>My hobbies</h2>
+
+        <div class="hobbies">
+          <img src="images/malena/food.jpeg" alt="Latte" />
+
+          <div class="hobbies_description">
+            <h2>Food</h2>
+            <p>
+              A portion of delicious food can make us happy in any situation. Eating a piece of good food is not simply the act of eating something but an experience between you, the moment, the environment, and last but not least, the food.
+            </p>
+          </div>
+        </div>
+
+        <div class="hobbies">
+          <img
+            src="images/malena/travel.jpeg"
+            alt="Airplane"
+          />
+          <div class="hobbies_description">
+            <h2>Travelling</h2>
+            <p>
+              This hobby is the most fantastic ever, even though it is the most expensive one. Travelling is an experience for life, you know people, places, histories, have fun stories and save great memories.
+            </p>
+          </div>
+        </div>
+
+        <div class="hobbies">
+          <img src="images/malena/tv.jpeg" alt="Mug and TV" />
+          <div class="hobbies_description">
+            <h2>Entertainment</h2>
+            <p>
+              I love to use any entertainment medium to enjoy my spare time. The best types of entertainment to me are reading books or mangas, watching tv shows, movies, or videos on YouTube.
+            </p>
+          </div>
+        </div>
+
+        <div class="hobbies">
+          <img src="images/malena/food2.jpeg" alt="Brazilian Food" />
+          <div class="hobbies_description">
+            <h2>Cooking</h2>
+            <p>
+              I started this hobby by observation since the fantastic process of having pieces of food and turning them into a delicious meal always caught my attention. Preparing a great meal is a nice thing to do for relaxing.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div id="message_container">
+        <div id="message">
+          <p class="main_message">
+            I ocassionally take on freelance opportunities.
+          </p>
+          <p class="sub_message">
+            Have an exciting project where you need some help? Send us over a
+            message, and lets chat.
+          </p>
+        </div>
+
+        <div class="message_form_container">
+          <div class="message_form">
+            <form>
+              <div class="message_grid_container">
+                <label for="name"
+                  >Full name: <span class="required"> *</span>
+                </label>
+                <input type="text" id="name" name="name" />
+                <span id="name_error"></span>
+              </div>
+
+              <div class="message_grid_container">
+                <label for="email"
+                  >Email: <span class="required"> *</span></label
+                >
+                <input type="email" id="email" />
+                <span id="email_error"></span>
+              </div>
+
+              <div class="message_grid_container">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" />
+              </div>
+
+              <div class="message_grid_container">
+                <label for="message_text_box"
+                  >Message: <span class="required"> *</span></label
+                >
+                <textarea
+                  id="message_text_box"
+                  name="message_text_box"
+                ></textarea>
+                <span id="message_error"></span>
+              </div>
+              <div class="submit_message">
+                <input type="submit" id="sendMessage" value="Message" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <section id="contact_container">
+        <h2>Contact us</h2>
+        <div id="contact_description">
+          <div class="contact_item">
+              <div>
+                  <address>
+                      <p> 325 Spruce Street, Waterloo, N2L 3M6, Canada </p>
+                      <p class="desktop"> Phone: 519-123-4567 </p>
+                      <p class="mobile"> Phone: <a href="519-123-4567"> 519-123-4567 </a></p>
+                      <p> email: <a href="mailto:sm@gmail.com">sm@gmail.com</a> </p>
+                  </address>
+  
+                  <a href="https://www.facebook.com/smriti.mool/" target="_blank"><img src="./images/facebook.png"
+                          alt="Facebook"></a>
+                  <a href="https://www.instagram.com/smritimool/" target="_blank"><img src="./images/instagram.png"
+                          alt="Instagram"></a>
+                  <a href="https://www.linkedin.com/in/smriti-mool/" target="_blank"> <img src="./images/linkedin.png"
+                          alt="Linkedin"></a>
+                  <a href="https://medium.com/@mool.smreeti" target="_blank"><img src="./images/medium.png"
+                          alt="Medium"></a>
+              </div>
+          </div>
+          <div class="contact_item">
+            <div>
+              <address>
+                <p>388 King Street, Kitchener, N2G 0C6, Canada</p>
+                <p class="desktop">Phone: 437-220-2353</p>
+                <p class="mobile">
+                  Phone: <a href="437-220-4567"> 437-220-2353 </a>
+                </p>
+                <p>email: <a href="mailto:sm@gmail.com">malenacaroline01@gmail.com</a></p>
+              </address>
+  
+              <a href="https://www.facebook.com/malena.assuncao/" target="_blank"
+                ><img src="./images/facebook.png" alt="Facebook"
+              /></a>
+              <a href="https://www.instagram.com/malenacaroline/" target="_blank"
+                ><img src="./images/instagram.png" alt="Instagram"
+              /></a>
+              <a href="https://www.linkedin.com/in/malenacaroline/" target="_blank">
+                <img src="./images/linkedin.png" alt="Linkedin"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer>
-        <div class="footer_content">
-            <h2>References:</h2>
-            <ul>
-                <li> <a href="https://pixabay.com" target="_blank">
-                        https://pixabay.com
-                    </a></li>
+      <div class="footer_content">
+        <h2>References:</h2>
+        <ul>
+          <li>
+            <a href="https://pixabay.com" target="_blank">
+              https://pixabay.com
+            </a>
+          </li>
 
-                <li> <a href="https://www.flaticon.com/" target="_blank">https://www.flaticon.com/</a></li>
-                <li> Personal Gallery Images</li>
-            </ul>
-        </div>
+          <li>
+            <a href="https://www.flaticon.com/" target="_blank"
+              >https://www.flaticon.com/</a
+            >
+          </li>
+          <li>Personal Gallery Images</li>
+        </ul>
+      </div>
 
-        <div class="copyright_content">
-            <span id="copyright">Copyright &copy; Smriti and Malena</span>
-            <img src="images/high-five.png" alt="Girls High five" />
-        </div>
+      <div class="copyright_content">
+        <span id="copyright">Copyright &copy; Smriti and Malena</span>
+        <img src="images/high-five.png" alt="Girls High five" />
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

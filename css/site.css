@@ -107,10 +107,6 @@ h2 {
   background-color: burlywood;
 }
 
-.hobbies_mln {
-  background-color: #ff948e69;
-}
-
 .hobbies_container h2 {
   width: 100%;
 }
@@ -368,6 +364,8 @@ tr:nth-child(even) {
   width: 60%;
 }
 
+/* ABOUT MALENA PAGE STYLE */
+
 .about_ml_section {
   padding: 60px 24px;
 }
@@ -410,6 +408,73 @@ tr:nth-child(even) {
   font-size: 18px;
   font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
     sans-serif;
+}
+
+/* HOBBIES MALENA STYLE */
+
+.hobbies_container_ml {
+  padding: 50px 20px 0 20px;
+  background-color: #ff948e69;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
+}
+
+.hobbies_ml {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 32px 0 0;
+}
+
+.hobby_ml {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(253, 67, 67);
+  color: #fff;
+  border-radius: 4px;
+  padding: 24px;
+  position: relative;
+  border-radius: 50%;
+  width: 260px;
+  height: 260px;
+  border: 2px double #f52657;
+  margin-right: 32px;
+  margin-bottom: 4%;
+}
+
+.hobby_ml:first-child {
+  margin-left: 32px;
+}
+
+.hobby_ml:nth-child(2n) {
+  background-color: #fff;
+  color: rgb(253, 67, 67);
+}
+
+.hobby_image_ml img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: -20px;
+  z-index: 999;
+}
+
+.hobby_content_ml {
+  margin-top: 50px;
+}
+
+.hobby_content_ml h2 {
+  font-size: 26px;
+  text-align: right;
+}
+
+.hobby_content_ml p {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 #galery_xp_ml {
@@ -549,5 +614,14 @@ tr:nth-child(even) {
     font-size: 12px;
     font-weight: 500;
     padding: 2px 4px;
+  }
+  
+  .hobby_ml {
+    margin-bottom: 6%;
+    margin-right: 0;
+  }
+
+  .hobby_ml:first-child {
+    margin-left: 0;
   }
 }

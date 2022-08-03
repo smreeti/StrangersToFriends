@@ -32,6 +32,161 @@ header img {
   width: 80px;
 }
 
+.banner {
+  width: 100%;
+  height: 400px;
+  background-image: url("../images/friends.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+}
+
+#whoareus h2,
+#howwemet h2,
+#abilites h2 {
+  text-decoration: underline;
+}
+
+.whoareus_container {
+  display: flex;
+  justify-content: center;
+}
+
+.whoareus_items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 32px 0;
+}
+
+.whoareus_item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 32px;
+}
+
+.whoareus_item img {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+}
+
+.whoareus_item p {
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
+  text-transform: uppercase;
+}
+
+#howwemet {
+  background-color:rgba(209, 206, 206, 0.22);
+  padding: 32px 0;
+}
+
+.howwemet_container {
+  width: 1024px;
+  margin: auto;
+}
+
+.howwemet_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 32px 24px;
+}
+
+.howwemet_content p {
+  flex: 1;
+  font-size: 26px;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
+  text-align: justify;
+  margin: 0 42px 0 0;
+  width: 45%;
+}
+
+.howwemet_content img {
+  flex: 1;
+  width: 50%;
+}
+
+.abilities_items {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 32px 0;
+  flex-wrap: wrap;
+}
+
+.abilities_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 32px 0 0;
+  border-radius: 4px;
+  padding: 6px 12px;
+  margin-top: 5%;
+}
+
+.abilities_item span {
+  font-size: 24px;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.abilities_image {
+  width: max-content;
+  margin-left: 20px;
+}
+
+.abilities_image img {
+  width: 46px;
+  height: 40px;
+}
+
+.blueish {
+  background-color: #e3f6f9;
+  color: #53b9d2;
+  border: 2px solid #53b9d2;
+}
+
+.purpleish {
+  background-color: #ece9f4;
+  color: #544bad;
+  border: 2px solid #544bad;
+}
+
+.orangish {
+  background-color: #f8eae8;
+  color: #e87341;
+  border: 2px solid #e87341;
+}
+
+.pinkish {
+  background-color: #f8e6ec;
+  color: #da4762;
+  border: 2px solid #da4762;
+}
+
+.greenish {
+  background-color: #ebf4ea;
+  color: #66a859;
+  border: 2px solid #66a859;
+}
+
+.yellowish {
+  background-color: #fdf6e4;
+  color: #f7bf55;
+  border: 2px solid #f7bf55;
+}
+
 .footer_content {
   text-align: center;
 }
@@ -510,6 +665,13 @@ tr:nth-child(even) {
 }
 
 @media screen and (max-width: 1024px) {
+  .howwemet_container {
+    width: 100%;
+  }
+
+  .abilities_item {
+    margin-top: 5%;
+  }
 }
 
 @media screen and (max-width: 760px) {
@@ -517,6 +679,52 @@ tr:nth-child(even) {
     display: block;
     text-align: center;
     padding: 0;
+  }
+
+  .banner {
+    height: 100px;
+  }
+
+  .whoareus_items {
+    justify-content: center;
+  }
+
+  .whoareus_item {
+    margin: 0;
+  }
+
+  .howwemet_container,
+  .abilities_container {
+    width: 100%;
+  }
+
+  .howwemet_content {
+    flex-direction: column;
+  }
+
+  .howwemet_content p {
+    margin: 0;
+    width: 100%;
+  }
+
+  .howwemet_content img {
+    width: 100%;
+    margin-top: 32px;
+  }
+
+  .abilities_items {
+    flex-direction: column;
+    margin: 0;
+    padding: 0 24px;
+  }
+
+  .abilities_item {
+    margin: 0 0 24px;
+    justify-content: space-between;
+  }
+
+  .abilities_item span {
+    font-size: 18px;
   }
 
   .about_sm_description {
@@ -615,7 +823,7 @@ tr:nth-child(even) {
     font-weight: 500;
     padding: 2px 4px;
   }
-  
+
   .hobby_ml {
     margin-bottom: 6%;
     margin-right: 0;

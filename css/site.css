@@ -4,6 +4,7 @@ body,
 html {
   margin: 0;
 }
+
 nav {
   font-weight: bold;
   font-size: 20px;
@@ -83,7 +84,7 @@ header img {
 }
 
 #howwemet {
-  background-color:rgba(209, 206, 206, 0.22);
+  background-color: rgba(209, 206, 206, 0.22);
   padding: 32px 0;
 }
 
@@ -113,6 +114,7 @@ header img {
 .howwemet_content img {
   flex: 1;
   width: 50%;
+  border-radius: 10px;
 }
 
 .abilities_items {
@@ -121,6 +123,7 @@ header img {
   margin: auto;
   padding: 32px 0;
   flex-wrap: wrap;
+  padding-top: 0;
 }
 
 .abilities_item {
@@ -418,6 +421,8 @@ textarea {
 
 .gallery_description {
   font-size: 20px;
+  text-align: justify;
+  padding: 0 10px;
 }
 
 .galleryWrap {
@@ -512,7 +517,7 @@ tr:nth-child(even) {
 
 .bucket_list_table ul {
   margin: 0;
-  padding-left: 45px;
+  padding-left: 30px;
 }
 
 .todo_desc {
@@ -664,6 +669,41 @@ tr:nth-child(even) {
     sans-serif;
 }
 
+#blog_container {
+  text-align: center;
+  background-color: #e3f6f9;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px;
+  padding: 40px;
+  row-gap: 30px;
+}
+
+.blog_content {
+  display: flex;
+  justify-content: center;
+}
+
+.blog_messsage {
+  display: inline-block;
+}
+
+.blog_image img {
+  border-radius: 50%;
+  width: 150px;
+}
+
+.blog_messsage {
+  font-size: 25px;
+  font-family: cursive;
+  font-style: italic;
+}
+
+.abilities_heading {
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 1024px) {
   .howwemet_container {
     width: 100%;
@@ -691,6 +731,8 @@ tr:nth-child(even) {
 
   .whoareus_item {
     margin: 0;
+    align-items: center;
+    width: 80%;
   }
 
   .howwemet_container,
@@ -721,6 +763,10 @@ tr:nth-child(even) {
   .abilities_item {
     margin: 0 0 24px;
     justify-content: space-between;
+  }
+
+  .abilities_heading {
+    margin-bottom: 20px;
   }
 
   .abilities_item span {
@@ -776,6 +822,7 @@ tr:nth-child(even) {
 
   #contact_description .contact_item:first-child {
     border-bottom: 1px solid #0b0d27;
+    padding-bottom: 20px;
   }
 
   .bucket_list_table {
@@ -832,4 +879,40 @@ tr:nth-child(even) {
   .hobby_ml:first-child {
     margin-left: 0;
   }
+
+  .blog_content {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+
+  #right_img {
+    grid-row: 1/2;
+  }
+
+  #left_quote {
+    grid-row: 2/3;
+  }
+
+  .blog_messsage {
+    font-size: 16px;
+  }
+
+  th {
+    font-size: 16px;
+    padding: 6px;
+  }
+
+  td {
+    font-size: 12px;
+  }
+
+  .bucket_list_table ul {
+    padding-left: 20px;
+  }
+
+  #contact_description{
+    font-size: 16px;
+  }
+
 }

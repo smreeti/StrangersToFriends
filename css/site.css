@@ -854,14 +854,15 @@ tr:nth-child(even) {
   }
 
   #galery_xp_ml {
-    grid-template-columns: 100px 100px;
+    grid-template-columns: 1fr 1fr;
     column-gap: 12px;
     row-gap: 12px;
+    width: 100%;
+    padding: 0 12px;
   }
 
-  .galery_image img {
-    width: 100px;
-    height: auto;
+  #galery_xp_ml img {
+    width: 100%;
   }
 
   .galery_image span {

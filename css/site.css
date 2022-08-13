@@ -638,16 +638,10 @@ tr:nth-child(even) {
 }
 
 #galery_xp_ml {
-  width: 1024px;
-  padding: 0 24px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: auto;
-}
-
-.galery_image:not(odd) {
-  margin-left: 2%;
 }
 
 .galery_image {
